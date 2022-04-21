@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/hiq-code-test/static/css/main.6c7a68c7.css",
-    "main.js": "/hiq-code-test/static/js/main.852da7fb.js",
+    "main.js": "/hiq-code-test/static/js/main.1be66fb0.js",
     "index.html": "/hiq-code-test/index.html",
     "main.6c7a68c7.css.map": "/hiq-code-test/static/css/main.6c7a68c7.css.map",
-    "main.852da7fb.js.map": "/hiq-code-test/static/js/main.852da7fb.js.map"
+    "main.1be66fb0.js.map": "/hiq-code-test/static/js/main.1be66fb0.js.map"
   },
   "entrypoints": [
     "static/css/main.6c7a68c7.css",
-    "static/js/main.852da7fb.js"
+    "static/js/main.1be66fb0.js"
   ]
 }
