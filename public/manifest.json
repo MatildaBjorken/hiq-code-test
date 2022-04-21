@@ -1,0 +1,9 @@
+{
+  "short_name": "Matilda code test",
+  "name": "Matilda Björk code test for HiQ",
+
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

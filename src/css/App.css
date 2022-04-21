@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+
+:root {
+  --body-bg: #d9dad2;
+  --box-bg: #fff;
+  --input-yellow: #F0B408;
+  --input-green: #00822A;
+  --input-blue: #015EAC;
+  --input-red: #E84540;
+  --txt-color: #000000;
+  --txt-second-color: #ccc;
+  --border-color: #000000;
+  --box-shadow: -10px 10px 0 rgb(0 0 0 / 40%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cutive", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: var(--body-bg);
+  color: var(--txt-color);
+  position: relative;
+  width: 100vw;
+  background-size: 2rem 2rem;
+  background-image: linear-gradient(90deg, var(--border-color) 1px, transparent 0), linear-gradient(180deg, var(--border-color) 1px, transparent 0);
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  height: 100vh;
+}
+
+#root {
+  max-width: 95%;
+}
+
+/* drop file wrapper styling */
+
+.drop-file-wrapper {
+  margin: 0;
+  background-color: var(--box-bg);
+  min-width: 320px;
+  max-width: 600px;
+  width: 100%;
+
+
+  border: 1px solid var(--border-color);
+  box-shadow: var(--box-shadow);
+}
+
+/* Navbar styling */
+
+.navbar {
+  margin: 0;
+  font-size: .5rem;
+  background: #d9dad2;
+  height: 2.5rem;
+  border-bottom: .1rem solid var(--border-color);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center
+}
+
+.title {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.close-btn {
+  background-color: var(--input-red);
+  margin-left: 1rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: .1rem solid var(--border-color);
+}
+
+.bars {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  width: 30%;
+  height: .8rem
+}
+
+/* drop file input styling */
+
+.drop-file-input {
+  margin: 30px;
+  position: relative;
+  height: 200px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--input-bg);
+}
+
+.drop-file-input p {
+  padding: 1rem;
+}
+
+.green {
+  background-color: var(--input-green);
+}
+
+.red {
+  background-color: var(--input-red);
+}
+
+.yellow {
+  background-color: var(--input-yellow);
+}
+
+.blue {
+  background-color: var(--input-blue);
+}
+
+/* file show styling */
+
+.drop-file-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.file-content {
+  margin: 0 30px 30px 30px;
+  background: #d9dad1;
+  padding: 30px;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+
+.loader {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+  border: 4px solid transparent;
+  position: relative;
+}
+
+.loader p {
+  margin-bottom: 8px;
+}
+
+.loader.hidden {
+  display: none
+}
+
+.loader.visible {
+  display: block;
+}
+
+.loader:before {
+  content: '';
+  border: 1px solid #fff;
+  border-radius: 10px;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  bottom: -4px;
+  left: -4px;
+}
+
+.loader .loaderBar {
+  position: absolute;
+  border-radius: 10px;
+  height: 1px;
+  margin-bottom: 8px;
+  right: 100%;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  width: 0;
+  animation: borealisBar 2s linear infinite;
+}
+
+@keyframes borealisBar {
+  0% {
+    left: 0%;
+    right: 100%;
+    width: 0%;
+  }
+
+  10% {
+    left: 0%;
+    right: 75%;
+    width: 25%;
+  }
+
+  90% {
+    right: 0%;
+    left: 75%;
+    width: 25%;
+  }
+
+  100% {
+    left: 100%;
+    right: 0%;
+    width: 0%;
+  }
+}
